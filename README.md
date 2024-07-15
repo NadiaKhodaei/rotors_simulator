@@ -1,6 +1,6 @@
 # Keyboard Teleoperation for Position and Yaw Control
 
-This Python script, `pos_yaw.py`, allows for teleoperation of a drone or robot using keyboard inputs. The script reads from the keyboard and publishes `PoseStamped` messages to control the position and yaw of the robot in a ROS (Robot Operating System) environment.
+This Python script, `key_pose.py`, allows for teleoperation of a drone or robot using keyboard inputs. The script reads from the keyboard and publishes `PoseStamped` messages to control the position and yaw of the robot in a ROS (Robot Operating System) environment.
 
 ## Features
 
@@ -12,4 +12,24 @@ This Python script, `pos_yaw.py`, allows for teleoperation of a drone or robot u
 - **Reset position** to the default using the `s` key.
 
 ## Key Bindings
+Reading from the keyboard and Publishing to PoseStamped!
 
+Moving around:
+Arrow Keys:
+↑ ↓ ← →
+
+↑/↓ : move forward/backward in x direction
+←/→ : rotate left/right (yaw) in z direction
+i/, : move up/down in z direction
+k/m : move left/right in y direction
+anything else : stop
+
+Adjust speed:
+
+    : increase step
+
+    : decrease step
+
+s : reset position to default
+
+CTRL-C to quit
